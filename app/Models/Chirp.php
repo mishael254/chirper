@@ -17,4 +17,5 @@ class Chirp extends Model
         "message",
 
     ];
+    
 }
