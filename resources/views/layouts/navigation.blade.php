@@ -16,8 +16,8 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     <!--add a new navigation link for chirps-->
-                    <x-nav-link :href="route("chirps.index")" :active="request()->routeIs("chirps.index")">
-                        {{ __("Chirps") }}
+                    <x-nav-link :href="route('chirps.index')" :active="request()->routeIs('chirps.index')">
+                        {{ __('Chirps') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -75,8 +75,8 @@
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
             <!--include also a navigation link for mobile devices-->
-            <x-responsive-nav-link :href="route("chirps.index")":active="request()->routeIs("chirps.index")">
-                {{ __("Chirps") }}
+            <x-responsive-nav-link :href="route('chirps.index')" :active="request()->routeIs('chirps.index')">
+                {{ __('Chirps') }}
             </x-responsive-nav-link>
         </div>
 
