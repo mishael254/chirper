@@ -51,7 +51,7 @@ class ChirpPolicy
     public function delete(User $user, Chirp $chirp): bool
     {
         //
-        return $chirp->user()->is($user);
+        return $this->update($user, $chirp);
     }
 
     /**
@@ -60,7 +60,7 @@ class ChirpPolicy
     public function restore(User $user, Chirp $chirp): bool
     {
         //
-        return $chirp->user()->is($user);
+        return $this->delete($user, $chirp);
     }
 
     /**
